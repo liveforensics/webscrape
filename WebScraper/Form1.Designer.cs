@@ -28,13 +28,34 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.ScrapeBtn = new System.Windows.Forms.Button();
+            this.SuspendLayout();
+            // 
+            // ScrapeBtn
+            // 
+            this.ScrapeBtn.Location = new System.Drawing.Point(85, 254);
+            this.ScrapeBtn.Name = "ScrapeBtn";
+            this.ScrapeBtn.Size = new System.Drawing.Size(75, 23);
+            this.ScrapeBtn.TabIndex = 0;
+            this.ScrapeBtn.Text = "Scrape";
+            this.ScrapeBtn.UseVisualStyleBackColor = true;
+            this.ScrapeBtn.Click += new System.EventHandler(this.ScrapeBtn_Click);
+            // 
+            // Form1
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.ScrapeBtn);
+            this.Name = "Form1";
             this.Text = "Form1";
+            this.ResumeLayout(false);
+
         }
 
         #endregion
+
+        private System.Windows.Forms.Button ScrapeBtn;
     }
 }
 
